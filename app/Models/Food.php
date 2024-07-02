@@ -28,6 +28,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property float $sodium
  * @property float $carbohydrates
  * @property float $protein
+ * @property float $iron
+ * @property float $calcium
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $source
@@ -63,6 +65,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Food whereServingWeight($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Food whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Food whereSodium($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Food whereIron($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Food whereCalcium($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Food whereSource($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Food whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Food withAllTags($tags, ?string $type = null)
@@ -104,6 +108,8 @@ final class Food extends Model
         'fat',
         'protein',
         'sodium',
+        'iron',
+        'calcium',
         'serving_size',
         'serving_unit',
         'serving_unit_name',
@@ -122,6 +128,8 @@ final class Food extends Model
         'serving_size' => 'float',
         'serving_weight' => 'float',
         'sodium' => 'float',
+        'iron' => 'float',
+        'calcium' => 'float',
     ];
 
     /**
@@ -150,6 +158,8 @@ final class Food extends Model
             'sodium' => $this->sodium,
             'carbohydrates' => $this->carbohydrates,
             'protein' => $this->protein,
+            'iron' => $this->iron,
+            'calcium' => $this->calcium,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

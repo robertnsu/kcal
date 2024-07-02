@@ -83,6 +83,24 @@
             </div>
             <div class="flex justify-between items-baseline border-b border-gray-300 text-sm">
                 <div>
+                    <span class="font-bold">Iron</span>
+                    {{ number_format($sums['iron']) }}mg
+                </div>
+                <div class="text-right">
+                    {{ $goalProgress['iron'] ?? 'N/A' }}
+                </div>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-gray-300 text-sm">
+                <div>
+                    <span class="font-bold">Calcium</span>
+                    {{ number_format($sums['calcium']) }}mg
+                </div>
+                <div class="text-right">
+                    {{ $goalProgress['calcium'] ?? 'N/A' }}
+                </div>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-gray-300 text-sm">
+                <div>
                     <span class="font-bold">Carbohydrates</span>
                     {{ number_format($sums['carbohydrates']) }}g
                 </div>

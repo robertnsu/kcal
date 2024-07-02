@@ -44,6 +44,16 @@
                     </section>
                     <hr class="border-gray-500"/>
                     <section class="flex justify-between">
+                        <h1 class="font-bold">Iron</h1>
+                        <div>{{ number_format($goal->iron) }}mg</div>
+                    </section>
+                    <hr class="border-gray-500"/>
+                    <section class="flex justify-between">
+                        <h1 class="font-bold">Calcium</h1>
+                        <div>{{ number_format($goal->calcium) }}mg</div>
+                    </section>
+                    <hr class="border-gray-500"/>
+                    <section class="flex justify-between">
                         <h1 class="font-bold">Total Carbohydrate</h1>
                         <div>{{ number_format($goal->carbohydrates) }}g</div>
                     </section>

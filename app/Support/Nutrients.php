@@ -114,6 +114,20 @@ class Nutrients
                 'weight' => 30,
                 'rdi' => 2300,
             ],
+            'iron' => [
+                'value' => 'iron',
+                'label' => 'iron',
+                'unit' => 'mg',
+                'weight' => 60,
+                'rdi' => 9,
+            ],
+            'calcium' => [
+                'value' => 'calcium',
+                'label' => 'calcium',
+                'unit' => 'mg',
+                'weight' => 70,
+                'rdi' => 500,
+            ],
         ]);
     }
 
@@ -242,6 +256,22 @@ class Nutrients
              *  - Greater than 140 rounds to nearest number divisible by 10.
              */
             'sodium' => ($amount < 5 ? 0 : ($amount <= 140 ? round($amount / 5 ) * 5 : round($amount / 10 ) * 10)),
+
+            /*
+             * Iron:
+             *  - Less than 2 goes to zero.
+             *  - Between 2 and 10 rounds to nearest whole.
+             *  - Greater than 10 rounds to nearest multiple of 2.
+             */
+            'iron' => ($amount < 2 ? 0 : ($amount <= 10 ? round($amount) : round($amount / 2 ) * 2)),
+
+            /*
+             * Calcium:
+             *  - Less than 2 goes to zero.
+             *  - Between 2 and 10 rounds to nearest whole.
+             *  - Greater than 10 rounds to nearest multiple of 2.
+             */
+            'calcium' => ($amount < 2 ? 0 : ($amount <= 10 ? round($amount) : round($amount / 2 ) * 2)),
 
             /*
              * Anything else excepts!

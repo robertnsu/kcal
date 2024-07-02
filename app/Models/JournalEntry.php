@@ -22,6 +22,8 @@ use Illuminate\Support\Collection;
  * @property float $sodium
  * @property float $carbohydrates
  * @property float $protein
+ * @property float $iron
+ * @property float $calcium
  * @property string $meal
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -43,6 +45,8 @@ use Illuminate\Support\Collection;
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereMeal($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereProtein($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereSodium($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereIron($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereCalcium($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereSummary($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JournalEntry whereUserId($value)
@@ -67,6 +71,8 @@ final class JournalEntry extends Model
         'meal',
         'protein',
         'sodium',
+        'iron',
+        'calcium',
         'summary',
     ];
 
@@ -81,6 +87,8 @@ final class JournalEntry extends Model
         'fat' => 'float',
         'protein' => 'float',
         'sodium' => 'float',
+        'iron' => 'float',
+        'calcium' => 'float',
     ];
 
     /**

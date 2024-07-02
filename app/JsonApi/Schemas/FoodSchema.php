@@ -39,6 +39,8 @@ class FoodSchema extends SchemaProvider
             'fat' => $resource->fat,
             'protein' => $resource->protein,
             'sodium' => $resource->sodium,
+            'iron' => $resource->iron,
+            'calcium' => $resource->calcium,
             'servingSize' => $resource->serving_size,
             'servingSizeFormatted' => $resource->serving_size_formatted,
             'servingUnit' => $resource->serving_unit,

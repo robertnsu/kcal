@@ -36,6 +36,8 @@ class GoalSchema extends SchemaProvider
             'fat' => $resource->fat,
             'protein' => $resource->protein,
             'sodium' => $resource->sodium,
+            'iron' => $resource->iron,
+            'calcium' => $resource->calcium,
         ];
     }
 

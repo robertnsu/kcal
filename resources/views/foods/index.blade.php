@@ -50,6 +50,16 @@
                         </section>
                         <hr class="border-gray-500"/>
                         <section class="flex justify-between">
+                            <h1 class="font-bold">Iron</h1>
+                            <div x-text="`${food.iron}mg`"></div>
+                        </section>
+                        <hr class="border-gray-500"/>
+                        <section class="flex justify-between">
+                            <h1 class="font-bold">Calcium</h1>
+                            <div x-text="`${food.calcium}mg`"></div>
+                        </section>
+                        <hr class="border-gray-500"/>
+                        <section class="flex justify-between">
                             <h1 class="font-bold">Total Carbohydrate</h1>
                             <div x-text="`${food.carbohydrates}g`"></div>
                         </section>

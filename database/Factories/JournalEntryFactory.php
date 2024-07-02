@@ -29,6 +29,8 @@ class JournalEntryFactory extends Factory
             'sodium' => $this->faker->randomFloat(1, 0, 500),
             'carbohydrates' => $this->faker->randomFloat(1, 0, 40),
             'protein' => $this->faker->randomFloat(1, 0, 20),
+            'iron' => $this->faker->randomFloat(1, 0, 20),
+            'calcium' => $this->faker->randomFloat(1, 0, 20),
             'meal' => User::getDefaultMeals()->where('enabled', true)->pluck('value')->random(),
         ];
     }

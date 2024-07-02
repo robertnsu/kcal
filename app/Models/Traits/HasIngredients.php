@@ -17,6 +17,8 @@ trait HasIngredients
         'fatTotal',
         'proteinTotal',
         'sodiumTotal',
+        'ironTotal',
+        'calciumTotal',
     ];
 
     /**

@@ -21,6 +21,8 @@ class UpdateGoalRequest extends FormRequest
             'fat' => ['nullable', 'numeric', 'min:0'],
             'cholesterol' => ['nullable', 'numeric', 'min:0'],
             'sodium' => ['nullable', 'numeric', 'min:0'],
+            'iron' => ['nullable', 'numeric', 'min:0'],
+            'calcium' => ['nullable', 'numeric', 'min:0'],
             'carbohydrates' => ['nullable', 'numeric', 'min:0'],
             'protein' => ['nullable', 'numeric', 'min:0'],
         ];

@@ -43,6 +43,9 @@ class NutrientsTest extends TestCase
             [0, 'cholesterol', 0], [0.1, 'cholesterol', 0], [0.2, 'cholesterol', 0], [0.3, 'cholesterol', 0], [0.4, 'cholesterol', 0], [0.5, 'cholesterol', 0.5], [0.9, 'cholesterol', 1], [1, 'cholesterol', 1], [1.2, 'cholesterol', 1], [1.4, 'cholesterol', 1.5], [5, 'cholesterol', 5], [6, 'cholesterol', 6], [6.25, 'cholesterol', 6], [6.75, 'cholesterol', 7],
             [0, 'fat', 0], [0.1, 'fat', 0], [0.2, 'fat', 0], [0.3, 'fat', 0], [0.4, 'fat', 0], [0.5, 'fat', 0.5], [0.9, 'fat', 1], [1, 'fat', 1], [1.2, 'fat', 1], [1.4, 'fat', 1.5], [5, 'fat', 5], [6, 'fat', 6], [6.25, 'fat', 6], [6.75, 'fat', 7],
             [0, 'sodium', 0], [1, 'sodium', 0], [2, 'sodium', 0], [3, 'sodium', 0], [4, 'sodium', 0], [5, 'sodium', 5], [6, 'sodium', 5], [7, 'sodium', 5], [8, 'sodium', 10], [9, 'sodium', 10], [10, 'sodium', 10], [139, 'sodium', 140], [140, 'sodium', 140], [146, 'sodium', 150], [151, 'sodium', 150], [159, 'sodium', 160],
+            // @todo: fix rounding for these nutrients (rs)
+            [0, 'iron', 0], [1, 'iron', 0],
+            [0, 'calcium', 0], [1, 'calcium', 0],
         ];
     }
 }

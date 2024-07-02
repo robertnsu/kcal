@@ -35,6 +35,8 @@ class JournalEntrySchema extends SchemaProvider
             'meal' => $resource->meal,
             'protein' => $resource->protein,
             'sodium' => $resource->sodium,
+            'iron' => $resource->iron,
+            'calcium' => $resource->calcium,
             'summary' => $resource->summary,
             'createdAt' => $resource->created_at,
             'updatedAt' => $resource->updated_at,

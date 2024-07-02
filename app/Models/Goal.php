@@ -22,6 +22,8 @@ use Illuminate\Support\Collection;
  * @property float|null $sodium
  * @property float|null $carbohydrates
  * @property float|null $protein
+ * @property float|null $iron
+ * @property float|null $calcium
  * @property-read \App\Models\User $user
  * @method static \Database\Factories\GoalFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal newModelQuery()
@@ -38,6 +40,8 @@ use Illuminate\Support\Collection;
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereProtein($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereSodium($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Goal whereIron($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Goal whereCalcium($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereTo($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Goal whereUserId($value)
@@ -61,6 +65,8 @@ final class Goal extends Model
         'fat',
         'protein',
         'sodium',
+        'iron',
+        'calcium',
     ];
 
     /**
@@ -74,6 +80,8 @@ final class Goal extends Model
         'fat' => 'float',
         'protein' => 'float',
         'sodium' => 'float',
+        'iron' => 'float',
+        'calcium' => 'float',
         // @todo Determine why `user_id` is a string and fix it.
         'user_id' => 'int',
     ];

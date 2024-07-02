@@ -45,6 +45,14 @@
                             <h1 class="font-bold">Sodium</h1>
                             <div x-text="`${recipe.sodiumPerServing}mg`"></div>
                         </section>
+                        <section class="flex justify-between">
+                            <h1 class="font-bold">Iron</h1>
+                            <div x-text="`${recipe.ironPerServing}mg`"></div>
+                        </section>
+                        <section class="flex justify-between">
+                            <h1 class="font-bold">Calcium</h1>
+                            <div x-text="`${recipe.calciumPerServing}mg`"></div>
+                        </section>
                         <hr class="border-gray-500"/>
                         <section class="flex justify-between">
                             <h1 class="font-bold">Total Carbohydrate</h1>

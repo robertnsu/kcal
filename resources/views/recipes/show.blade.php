@@ -168,6 +168,15 @@
                     </div>
                     <hr class="border-gray-500"/>
                     <div class="flex justify-between">
+                        <div class="font-bold">Iron</div>
+                        <div>{{ $recipe->ironPerServing() }}mg</div>
+                    </div>
+                    <hr class="border-gray-500"/>
+                    <div class="flex justify-between">
+                        <div class="font-bold">Calcium</div>
+                        <div>{{ $recipe->calciumPerServing() }}mg</div>
+                    <hr class="border-gray-500"/>
+                    <div class="flex justify-between">
                         <div class="font-bold">Total Carbohydrate</div>
                         <div>{{ $recipe->carbohydratesPerServing() }}g</div>
                     </div>
